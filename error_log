@@ -1,0 +1,325 @@
+[27-Apr-2018 23:40:02 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookAuthenticationException' with message 'Invalid OAuth access token.' in /home/chica53/public_html/new_site/system/application/libraries/facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#6 /home/chica53/public_html/new_site/system/application/controllers/news.php(555): Facebook\Facebook->get('/me/accounts')
+#7 [internal function]: News->social_share()
+#8 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#9 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#10 {main}
+
+Next exception 'Facebook\Exceptions\FacebookResponseException' with message 'Invalid OAuth access token.' in /home/chica53/public_html/new_site/system/application/libraries/facebook/Exceptions/FacebookResponseException.php:106
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(210): Facebook\Exceptions\FacebookResponseException::create(Object(Facebook\FacebookResponse))
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(255): Facebook\FacebookResponse->makeException()
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookResponse.php(82): Facebook\FacebookResponse->decodeBody()
+#3 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(225): Facebook\FacebookResponse->__construct(Object(Facebook\FacebookRequest), '{"error":{"mess...', 400, Array)
+#4 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#5 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#6 /home/chica53/public_html/new_site/system/application/controllers/news.php(555): Facebook\Facebook->get('/me/accounts')
+#7 [internal function]: News->social_share()
+#8 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#9 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#10 {main}
+[02-Jun-2018 01:52:48 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'isset' (T_ISSET), expecting '(' in /home/chica53/public_html/new_site/system/application/views/news/listnews.php on line 33
+[02-Jun-2018 01:54:02 America/Los_Angeles] PHP Parse error:  syntax error, unexpected 'category_id' (T_STRING) in /home/chica53/public_html/new_site/system/application/views/news/listnews.php on line 34
+[11-Jun-2018 04:16:31 America/Los_Angeles] PHP Parse error:  syntax error, unexpected '&' in /home/chica53/public_html/new_site/system/application/views/news/category_switcher.php on line 86
+[18-Aug-2018 01:40:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10519 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[18-Aug-2018 22:10:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10522 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[28-Jan-2019 23:30:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[28-Jan-2019 23:50:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Jan-2019 01:20:22 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Jan-2019 01:30:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 02:40:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 02:50:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 03:10:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 03:30:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 04:00:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[19-Feb-2019 04:20:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[20-Feb-2019 02:20:21 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[20-Feb-2019 02:30:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[20-Feb-2019 02:50:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[20-Feb-2019 03:10:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[20-Feb-2019 03:30:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[21-Feb-2019 03:30:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[28-Feb-2019 02:40:21 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Exceptions has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Exceptions.php on line 27
+[29-Mar-2019 01:57:32 UTC] PHP Notice:  Only variables should be passed by reference in /home/chica53/public_html/new_site/system/codeigniter/Common.php on line 148
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Hooks has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Hooks.php on line 30
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Config has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Config.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_URI has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/URI.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Router has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Router.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Output has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Output.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Input has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Input.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Language has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Language.php on line 27
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Base has a deprecated constructor in /home/chica53/public_html/new_site/system/codeigniter/Base5.php on line 33
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; Controller has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Controller.php on line 30
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; News has a deprecated constructor in /home/chica53/public_html/new_site/system/application/controllers/news.php on line 3
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_Loader has a deprecated constructor in /home/chica53/public_html/new_site/system/libraries/Loader.php on line 29
+[29-Mar-2019 01:57:32 UTC] PHP Deprecated:  Methods with the same name as their class will not be constructors in a future version of PHP; CI_DB_driver has a deprecated constructor in /home/chica53/public_html/new_site/system/database/DB_driver.php on line 31
+[29-Mar-2019 01:57:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_pconnect() in /home/chica53/public_html/new_site/system/database/drivers/mysql/mysql_driver.php:88
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/database/DB_driver.php(115): CI_DB_mysql_driver->db_pconnect()
+#1 /home/chica53/public_html/new_site/system/database/DB.php(137): CI_DB_driver->initialize()
+#2 /home/chica53/public_html/new_site/system/libraries/Loader.php(224): DB(Array, false)
+#3 /home/chica53/public_html/new_site/system/libraries/Loader.php(985): CI_Loader->database()
+#4 /home/chica53/public_html/new_site/system/libraries/Controller.php(83): CI_Loader->_ci_autoloader()
+#5 /home/chica53/public_html/new_site/system/libraries/Controller.php(43): Controller->_ci_initialize()
+#6 /home/chica53/public_html/new_site/system/application/controllers/news.php(7): Controller->Controller()
+#7 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(201): News->News()
+#8 /home/chica53/public_html/new_site/index.php(118): require_once('/hom in /home/chica53/public_html/new_site/system/database/drivers/mysql/mysql_driver.php on line 88
+[29-Mar-2019 04:20:21 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 04:50:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 05:00:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 05:10:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 05:30:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 05:50:12 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 06:10:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
+[29-Mar-2019 06:50:11 America/Los_Angeles] exception 'Facebook\Exceptions\FacebookSDKException' with message 'Resolving timed out after 10000 milliseconds' in /home/chica53/public_html/new_site/system/application/libraries/facebook/HttpClients/FacebookCurlHttpClient.php:73
+Stack trace:
+#0 /home/chica53/public_html/new_site/system/application/libraries/facebook/FacebookClient.php(216): Facebook\HttpClients\FacebookCurlHttpClient->send('https://graph.f...', 'GET', '', Array, 60)
+#1 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(469): Facebook\FacebookClient->sendRequest(Object(Facebook\FacebookRequest))
+#2 /home/chica53/public_html/new_site/system/application/libraries/facebook/Facebook.php(342): Facebook\Facebook->sendRequest('GET', '/me/accounts', Array, NULL, NULL, NULL)
+#3 /home/chica53/public_html/new_site/system/application/controllers/news.php(691): Facebook\Facebook->get('/me/accounts')
+#4 [internal function]: News->social_share()
+#5 /home/chica53/public_html/new_site/system/codeigniter/CodeIgniter.php(236): call_user_func_array(Array, Array)
+#6 /home/chica53/public_html/new_site/index.php(118): require_once('/home/chica53/p...')
+#7 {main}
